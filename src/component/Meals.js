@@ -11,7 +11,7 @@ const Meals = () => {
      data: loadedMeals,
      isLoading,
      error,
-     sendRequest,
+     
    } = useHttp(
      "https://fast-food-backend-5avu.onrender.com/meals",
      requestConfig,
