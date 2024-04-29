@@ -33,7 +33,7 @@ const [error,setError] = useState();
  },[url,config]);
 
  useEffect(()=>{
-    if((config) && ( (config.method === 'GET' )  || (!config.method)) || (!config)){
+    if(((config) && ( (config.method === 'GET' )) || (!config.method)) || (!config)){
         sendRequest();
     }
    
